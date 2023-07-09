@@ -8,9 +8,13 @@ local utils = require("core.utils")
 
 vim.cmd [[packadd packer.nvim]]
 
-return require("packer").startup(function(use)
+return require("packer").startup({function(use)
   --- Packer can manager itself
   use "wbthomason/packer.nvim";
 
   utils.loadPlugins(use, "ui");
-end)
+end, config = {
+  display = {
+    open_fn = require("packer.util").float
+  }
+}})
