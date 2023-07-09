@@ -9,6 +9,9 @@ local default_config = {
     --- number
     number = true,
     relativenumber = true,
+
+    --- colors
+    termguicolors = true,
   },
   bo = {
     --- tabstop
