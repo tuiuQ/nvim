@@ -32,4 +32,16 @@ local default_keymaps = {
   v = visible_keymaps,
 }
 
+local plugins_keymaps = {
+  nvimtree = {
+    n = {
+      ["<SPACE>e"] = { action = ":NvimTreeToggle<CR>", desc = "toggle file exploer" }
+    }
+  }
+}
+
 utils.loadKeymaps(default_keymaps);
+
+for _, keymaps in pairs(plugins_keymaps) do
+  utils.loadKeymaps(keymaps);
+end
