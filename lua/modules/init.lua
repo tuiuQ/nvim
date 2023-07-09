@@ -4,9 +4,13 @@
 --- DateTime: 2023/7/9 18:19
 ---
 
+local utils = require("core.utils")
+
 vim.cmd [[packadd packer.nvim]]
 
 return require("packer").startup(function(use)
   --- Packer can manager itself
   use "wbthomason/packer.nvim";
+
+  utils.loadPlugins(use, "ui");
 end)
