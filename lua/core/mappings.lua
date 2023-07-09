@@ -32,35 +32,35 @@ local default_keymaps = {
   v = visible_keymaps,
 }
 
-local plugins_keymaps = {
-  nvimtree = {
-    n = {
-      ["<SPACE>e"] = { action = ":NvimTreeToggle<CR>", desc = "toggle file exploer" }
-    }
-  },
-  bufferline = {
-    n = {
-      ["<TAB>"] = { action = ":BufferLineCycleNext<CR>", desc = "next buffer" },
-      ["<S-TAB>"] = { action = ":BufferLineCyclePrev<CR>", desc = "prev buffer" },
-    }
-  },
-  telescope = {
-    n = {
-      ["<SPACE>ff"] = { action = ":Telescope find_files<CR>", desc = "open telescope find files" },
-      ["<SPACE>fw"] = { action = ":Telescope live_grep<CR>", desc = "open telescope live grep" },
-    }
-  },
-  packer = {
-    n = {
-      ["<SPACE>ps"] = { action = ":PackerSync<CR>", desc = "Packer Sync" },
-      ["<SPACE>pi"] = { action = ":PackerInstall<CR>", desc = "Packer Install" },
-      ["<SPACE>pp"] = { action = ":PackerUpdate<CR>", desc = "Packer Update" },
-    }
-  }
-}
+-- local plugins_keymaps = {
+--   nvimtree = {
+--     n = {
+--       ["<SPACE>e"] = { action = ":NvimTreeToggle<CR>", desc = "toggle file exploer" }
+--     }
+--   },
+--   bufferline = {
+--     n = {
+--       ["<TAB>"] = { action = ":BufferLineCycleNext<CR>", desc = "next buffer" },
+--       ["<S-TAB>"] = { action = ":BufferLineCyclePrev<CR>", desc = "prev buffer" },
+--     }
+--   },
+--   telescope = {
+--     n = {
+--       ["<SPACE>ff"] = { action = ":Telescope find_files<CR>", desc = "open telescope find files" },
+--       ["<SPACE>fw"] = { action = ":Telescope live_grep<CR>", desc = "open telescope live grep" },
+--     }
+--   },
+--   packer = {
+--     n = {
+--       ["<SPACE>ps"] = { action = ":PackerSync<CR>", desc = "Packer Sync" },
+--       ["<SPACE>pi"] = { action = ":PackerInstall<CR>", desc = "Packer Install" },
+--       ["<SPACE>pp"] = { action = ":PackerUpdate<CR>", desc = "Packer Update" },
+--     }
+--   }
+-- }
 
 utils.loadKeymaps(default_keymaps);
 
-for _, keymaps in pairs(plugins_keymaps) do
-  utils.loadKeymaps(keymaps);
-end
+-- for _, keymaps in pairs(plugins_keymaps) do
+--   utils.loadKeymaps(keymaps);
+-- end
