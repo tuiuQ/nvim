@@ -13,6 +13,7 @@ return require("packer").startup({function(use)
   use "wbthomason/packer.nvim";
 
   utils.loadPlugins(use, "ui");
+  utils.loadPlugins(use, "lsp");
 end, config = {
   display = {
     open_fn = require("packer.util").float
