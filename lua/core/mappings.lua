@@ -43,6 +43,13 @@ local plugins_keymaps = {
       ["<TAB>"] = { action = ":BufferLineCycleNext<CR>", desc = "next buffer" },
       ["<S-TAB>"] = { action = ":BufferLineCyclePrev<CR>", desc = "prev buffer" },
     }
+  },
+  telescope = {
+    n = {
+      ["<SPACE>ff"] = { action = ":Telescope find_files<CR>", desc = "open telescope find files" },
+      ["<SPACE>fw"] = { action = ":Telescope live_grep<CR>", desc = "open telescope live grep" },
+    }
+  },
   }
 }
 

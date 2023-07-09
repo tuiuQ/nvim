@@ -34,4 +34,9 @@ ui["nvim-lualine/lualine.nvim"] = {
   end
 }
 
+ui["nvim-telescope/telescope.nvim"] = {
+  tag = "0.1.2",
+  requires = { "nvim-lua/plenary.nvim" },
+}
+
 return ui;
