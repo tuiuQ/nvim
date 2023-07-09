@@ -13,4 +13,10 @@ ui["nvim-tree/nvim-tree.lua"] = {
   end
 }
 
+ui["rafamadriz/neon"] = {
+  config = function ()
+    vim.cmd [[colorscheme neon]]
+  end
+}
+
 return ui;
