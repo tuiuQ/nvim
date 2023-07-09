@@ -4,15 +4,7 @@
 --- DateTime: 2023/7/9 17:40
 ---
 
-local keymap = vim.keymap.set;
-
-function nmap(...)
-  keymap("n", ...);
-end
-
-function vmap(...)
-  keymap("v", ...);
-end
+local utils = require("core.utils");
 
 local normal_keymaps = {
   ["J"] = { action = "5j", desc = "move to down 5 line" },
@@ -35,21 +27,9 @@ local visible_keymaps = {
 }
 
 
-local default_opts = {
-  silent = true,
-  desc = "",
+local default_keymaps = {
+  n = normal_keymaps,
+  v = visible_keymaps,
 }
 
-for key, opts in pairs(normal_keymaps) do
-  if opts.desc then
-    default_opts.desc = opts.desc;
-  end
-  nmap(key, opts.action, default_opts);
-end
-
-for key, opts in pairs(visible_keymaps) do
-  if opts.desc then
-    default_opts.desc = opts.desc;
-  end
-  vmap(key, opts.action, default_opts);
-end
+utils.loadKeymaps(default_keymaps);
