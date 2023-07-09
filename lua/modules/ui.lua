@@ -27,4 +27,11 @@ ui["akinsho/bufferline.nvim"] = {
   end
 }
 
+ui["nvim-lualine/lualine.nvim"] = {
+  requires = { "nvim-tree/nvim-web-devicons", opt = true },
+  config = function ()
+    require("modules.config.evil_lualine");
+  end
+}
+
 return ui;
