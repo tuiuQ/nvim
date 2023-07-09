@@ -5,19 +5,6 @@
 ---
 
 -- Basic Setup
-local opt = vim.opt;
-
--- number
-opt.number = true;
-opt.relativenumber = true;
-
--- tabstop
-opt.tabstop = 2;
-opt.softtabstop = 2;
-opt.shiftwidth = 2;
-opt.expandtab = true;
-
-
 local keymap = vim.keymap.set;
 
 keymap("n", "J", "5j");
@@ -31,3 +18,5 @@ keymap("v", "L", "5l");
 
 keymap("n", "S", ":w<CR>");
 keymap("n", "Q", ":q<CR>");
+
+require("core")
