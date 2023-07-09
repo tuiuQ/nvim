@@ -37,6 +37,12 @@ local plugins_keymaps = {
     n = {
       ["<SPACE>e"] = { action = ":NvimTreeToggle<CR>", desc = "toggle file exploer" }
     }
+  },
+  bufferline = {
+    n = {
+      ["<TAB>"] = { action = ":BufferLineCycleNext<CR>", desc = "next buffer" },
+      ["<S-TAB>"] = { action = ":BufferLineCyclePrev<CR>", desc = "prev buffer" },
+    }
   }
 }
 

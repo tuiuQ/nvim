@@ -19,4 +19,12 @@ ui["rafamadriz/neon"] = {
   end
 }
 
+ui["akinsho/bufferline.nvim"] = {
+  tag = "*",
+  requires = { "nvim-tree/nvim-web-devicons" },
+  config = function ()
+    require("bufferline").setup();
+  end
+}
+
 return ui;
