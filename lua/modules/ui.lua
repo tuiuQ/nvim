@@ -13,9 +13,9 @@ ui["nvim-tree/nvim-tree.lua"] = {
   end
 }
 
-ui["rafamadriz/neon"] = {
-  config = function ()
-    vim.cmd [[colorscheme neon]]
+ui["navarasu/onedark.nvim"] = {
+  config = function()
+    require("onedark").load()
   end
 }
 
