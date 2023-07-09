@@ -50,6 +50,12 @@ local plugins_keymaps = {
       ["<SPACE>fw"] = { action = ":Telescope live_grep<CR>", desc = "open telescope live grep" },
     }
   },
+  packer = {
+    n = {
+      ["<SPACE>ps"] = { action = ":PackerSync<CR>", desc = "Packer Sync" },
+      ["<SPACE>pi"] = { action = ":PackerInstall<CR>", desc = "Packer Install" },
+      ["<SPACE>pp"] = { action = ":PackerUpdate<CR>", desc = "Packer Update" },
+    }
   }
 }
 
