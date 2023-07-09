@@ -39,4 +39,11 @@ ui["nvim-telescope/telescope.nvim"] = {
   requires = { "nvim-lua/plenary.nvim" },
 }
 
+ui["nvim-treesitter/nvim-treesitter"] = {
+  run = { ":TSUpdate" },
+  config = function ()
+    require("modules.config.treesitter")
+  end
+}
+
 return ui;
