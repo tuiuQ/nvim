@@ -12,6 +12,13 @@ local default_config = {
 
     --- colors
     termguicolors = true,
+
+    --- tabstop
+    tabstop = 2,
+    softtabstop = 2,
+    expandtab = true,
+    shiftwidth = 2,
+    smartindent = true,
   },
   bo = {
     --- tabstop
