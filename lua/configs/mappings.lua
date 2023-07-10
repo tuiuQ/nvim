@@ -26,6 +26,18 @@ M.plugins = {
     n = {
       ["<SPACE>e"] = { ":NvimTreeToggle<CR>", "toggle nvimtree" }
     }
+  },
+  telescope = {
+    n = {
+      ["<SPACE>ff"] = { ":Telescope find_files<CR>", "telescope find files" },
+      ["<SPACE>fw"] = { ":Telescope live_grep<CR>", "telescope live grep" },
+    }
+  },
+  bufferline = {
+    n = {
+      ["<TAB>"] = { ":BufferLineCycleNext<CR>", "next tab" },
+      ["<S-TAB>"] = { ":BufferLineCyclePrev<CR>", "prev tab" },
+    }
   }
 };
 

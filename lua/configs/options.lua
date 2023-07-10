@@ -9,6 +9,7 @@ M.basic = {
     shiftwidth = 2,
     expandtab = true,
     autoindent = true,
+    clipboard = "unnamedplus",
   },
   bo = {
     tabstop = 2,
