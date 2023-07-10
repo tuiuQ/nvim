@@ -97,8 +97,13 @@ M.load_config = function(modules)
   return {}
 end
 
-M.load_keymaps = function ()
-  local basic = M.load_config "mappings/basic"
+M.load_keymaps = function (config)
+  local basic = {}
+  if config == nil then
+    basic = M.load_config "mappings/basic"
+  else
+    basic = config
+  end
   local default_options = {
     silent = true,
     desc = ""

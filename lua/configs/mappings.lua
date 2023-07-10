@@ -22,6 +22,11 @@ M.basic = {
 };
 
 M.plugins = {
+  nvimtree = {
+    n = {
+      ["<SPACE>e"] = { ":NvimTreeToggle<CR>", "toggle nvimtree" }
+    }
+  }
 };
 
 return M;

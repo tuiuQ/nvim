@@ -16,6 +16,9 @@ M.basic = {
     shiftwidth = 2,
     expandtab = true,
     autoindent = true,
+  },
+  g = {
+    termguicolors = true,
   }
 }
 
