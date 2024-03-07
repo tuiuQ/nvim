@@ -1,3 +1,4 @@
+require("core")
 local keymap = vim.keymap.set
 
 vim.o.number = true
