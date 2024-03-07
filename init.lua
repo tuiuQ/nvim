@@ -21,3 +21,6 @@ keymap("v", "J", "5j")
 keymap("v", "K", "5k")
 keymap("v", "H", "5h")
 keymap("v", "L", "5l")
+
+--- Plugins
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>")
