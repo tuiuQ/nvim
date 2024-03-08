@@ -19,5 +19,6 @@ require("lazy").setup({
 	require("plugins.treesitter"),
 	require("plugins.editor"),
 	require("plugins.statusline"),
-	require("plugins.tabline")
+	require("plugins.tabline"),
+	require("plugins.telescope")
 })
