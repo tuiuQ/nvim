@@ -62,4 +62,10 @@ M.tabline = {
 	}
 }
 
+M.telescope = {
+  normal_mode = {
+    ["<leader>ff"] = ":Telescope find_files<CR>"
+  }
+}
+
 return M
