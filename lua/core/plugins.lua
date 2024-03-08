@@ -20,5 +20,7 @@ require("lazy").setup({
 	require("plugins.editor"),
 	require("plugins.statusline"),
 	require("plugins.tabline"),
-	require("plugins.telescope")
+	require("plugins.telescope"),
+  require("plugins.lspconfig").config,
+  require("plugins.mason")
 })
