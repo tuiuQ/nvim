@@ -32,3 +32,4 @@ keymap("n", "<C-l>", "<C-w>l")
 
 --- Plugins
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>")
+
