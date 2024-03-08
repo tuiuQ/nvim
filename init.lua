@@ -25,5 +25,10 @@ keymap("v", "K", "5k")
 keymap("v", "H", "5h")
 keymap("v", "L", "5l")
 
+keymap("n", "<C-j>", "<C-w>j")
+keymap("n", "<C-k>", "<C-w>k")
+keymap("n", "<C-h>", "<C-w>h")
+keymap("n", "<C-l>", "<C-w>l")
+
 --- Plugins
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>")
