@@ -4,12 +4,14 @@ local keymap = vim.keymap.set
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.termguicolors = true
+vim.opt.termguicolors = true
 vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 vim.o.clipboard = "unnamedplus"
 vim.opt.clipboard = "unnamedplus"
 vim.g.clipboard = "unnamedplus"
+
 
 
 keymap("n", "S", ":w<CR>")
@@ -32,5 +34,9 @@ keymap("n", "<C-l>", "<C-w>l")
 keymap("n", "<ESC><ESC>", ":noh<CR>")
 
 --- Plugins
+--- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>")
 
+--- tabline
+keymap("n", "<TAB>", ":BufferLineCycleNext<CR>")
+keymap("n", "<S-TAB>", ":BufferLineCyclePrev<CR>")
