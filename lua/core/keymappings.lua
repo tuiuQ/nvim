@@ -37,7 +37,8 @@ M.basic = {
 		["<C-k>"] = "<C-w>k",
 		["<C-h>"] = "<C-w>h",
 		["<C-l>"] = "<C-w>l",
-		["<ESC><ESC>"] = ":noh<CR>"
+		["<ESC><ESC>"] = ":noh<CR>",
+    [";"] = ":"
 	},
 	visual_mode = {
 		["J"] = "5j",
