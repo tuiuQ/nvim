@@ -7,6 +7,9 @@ vim.o.termguicolors = true
 vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
+vim.o.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamedplus"
+vim.g.clipboard = "unnamedplus"
 
 
 keymap("n", "S", ":w<CR>")
