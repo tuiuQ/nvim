@@ -1,3 +1,5 @@
+local utils = require("core.utils")
+
 vim.cmd([[
 fun! s:MakePair()
 	let line = getline('.')
@@ -98,9 +100,21 @@ return {
 	{ 'theniceboy/antovim', lazy = false, },
 	--- With Wildfire you can quickly select the closest text object among a group of candidates.
 	{ 'gcmt/wildfire.vim',  lazy = false, },
-	ufoPluginConfig,
 	autopairsPluginConfig,
   {
     "mg979/vim-visual-multi",
+  },
+  {
+    'jghauser/fold-cycle.nvim',
+    config = function()
+      vim.o.foldcolumn = '1' -- '0' is not bad
+      vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+      vim.o.foldlevelstart = 99
+      vim.o.foldenable = true
+
+      utils.keymap.load("foldcycle")
+
+      require('fold-cycle').setup()
+    end
   }
 }

@@ -69,4 +69,13 @@ M.telescope = {
   }
 }
 
+M.foldcycle = {
+  normal_mode = {
+    ["zo"] = function() return require("fold-cycle").open() end,
+    ["zc"] = function() return require("fold-cycle").close() end,
+    ["zC"] = function() return require("fold-cycle").close_all() end,
+    ["zM"] = function() return require("fold-cycle").open_all() end
+  }
+}
+
 return M
