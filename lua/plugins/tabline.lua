@@ -1,3 +1,4 @@
+local utils = require("core.utils")
 local M = {}
 
 M.config = {
@@ -72,6 +73,8 @@ M.setup = function()
 	local bufferline = require("bufferline")
 
 	bufferline.setup(M.config)
+
+	utils.keymap.load("tabline")
 end
 
 return {
