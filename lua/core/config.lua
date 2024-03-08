@@ -1,12 +1,14 @@
 return {
   servers = {
     "lua_ls",
-    "tsserver"
+    "tsserver",
+    "intelephense"
   },
   mason_servers = {
     ensure_installed = {
       "lua-language-server",
-      "typescript-language-server"
+      "typescript-language-server",
+      "intelephense"
     }
   }
 }
