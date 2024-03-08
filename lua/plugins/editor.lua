@@ -100,4 +100,7 @@ return {
 	{ 'gcmt/wildfire.vim',  lazy = false, },
 	ufoPluginConfig,
 	autopairsPluginConfig,
+  {
+    "mg979/vim-visual-multi",
+  }
 }
