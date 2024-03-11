@@ -22,5 +22,11 @@ require("lazy").setup({
 	require("plugins.tabline"),
 	require("plugins.telescope"),
   require("plugins.lspconfig").config,
-  require("plugins.mason")
+  require("plugins.mason"),
+  require("plugins.nvim-cmp")
+}, {
+  ui = {
+      border = "double",
+      style = "minimal"
+    }
 })
