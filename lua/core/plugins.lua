@@ -23,7 +23,8 @@ require("lazy").setup({
 	require("plugins.telescope"),
   require("plugins.lspconfig").config,
   require("plugins.mason"),
-  require("plugins.nvim-cmp")
+  require("plugins.nvim-cmp"),
+  require("plugins.indent"),
 }, {
   ui = {
       border = "double",
