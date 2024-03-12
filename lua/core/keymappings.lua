@@ -69,6 +69,12 @@ M.telescope = {
   }
 }
 
+M.joshuto = {
+  normal_mode = {
+    ["<leader>ra"] = ":Joshuto<CR>"
+  }
+}
+
 M.foldcycle = {
   normal_mode = {
     ["zo"] = function() return require("fold-cycle").open() end,

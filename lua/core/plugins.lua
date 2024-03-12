@@ -27,7 +27,8 @@ require("lazy").setup({
   require("plugins.indent"),
   require('plugins.wilder'),
   require('plugins.winbar'),
-  require('plugins.notify')
+  require('plugins.notify'),
+  require('plugins.joshuto')
 }, {
   ui = {
       border = "double",
