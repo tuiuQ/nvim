@@ -25,7 +25,8 @@ require("lazy").setup({
   require("plugins.mason"),
   require("plugins.nvim-cmp"),
   require("plugins.indent"),
-  require('plugins.wilder')
+  require('plugins.wilder'),
+  require('plugins.winbar'),
 }, {
   ui = {
       border = "double",
