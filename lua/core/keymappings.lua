@@ -38,7 +38,9 @@ M.basic = {
 		["<C-h>"] = "<C-w>h",
 		["<C-l>"] = "<C-w>l",
 		["<ESC><ESC>"] = ":noh<CR>",
-    [";"] = ":"
+    [";"] = ":",
+    ["R"] = ":Joshuto<CR>",
+    ["<leader>gg"] = ":LazyGit<CR>"
 	},
 	visual_mode = {
 		["J"] = "5j",

@@ -28,7 +28,8 @@ require("lazy").setup({
   require('plugins.wilder'),
   require('plugins.winbar'),
   require('plugins.notify'),
-  require('plugins.joshuto')
+  require('plugins.joshuto'),
+  require('plugins.lazygit')
 }, {
   ui = {
       border = "double",
