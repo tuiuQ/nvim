@@ -10,7 +10,7 @@ return {
           enable = true,
           use_treesitter = true,
           style = {
-            { fg = "#91bef0" },
+            { fg = "#806d9c" },
           },
           exclude_filetypes = require("core.ft").exclude_ft_table,
           chars = {
@@ -18,7 +18,6 @@ return {
             vertical_line = "│",
             left_top = "╭",
             left_bottom = "╰",
-            right_arrow = "─",
           },
         },
         indent = {
@@ -44,10 +43,10 @@ return {
   },
   {
     "lukas-reineke/indent-blankline.nvim",
-    enabled = false,
+    enabled = true,
   },
   {
     "echasnovski/mini.indentscope",
-    enabled = false,
+    enabled = true,
   },
 }
