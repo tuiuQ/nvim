@@ -41,7 +41,7 @@ M.basic = {
     [";"] = ":",
     ["R"] = ":Joshuto<CR>",
     ["<leader>gg"] = ":LazyGit<CR>",
-    ["<leader>|"] = ":source $MYVIMRC<CR>"
+    ["<leader>\\"] = ":source $MYVIMRC<CR>"
 	},
 	visual_mode = {
 		["J"] = "5j",
