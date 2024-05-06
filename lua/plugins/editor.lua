@@ -100,6 +100,13 @@ return {
 	{ 'theniceboy/antovim', lazy = false, },
 	--- With Wildfire you can quickly select the closest text object among a group of candidates.
 	{ 'gcmt/wildfire.vim',  lazy = false, },
+  {
+    'numToStr/Comment.nvim',
+    lazy = false,
+    config = function ()
+      require("Comment").setup()
+    end
+  },
 	autopairsPluginConfig,
   ufoPluginConfig,
   {
