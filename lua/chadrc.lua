@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "tokyodark",
+	theme = "eldritch",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -20,5 +20,16 @@ M.base46 = {
 --          lazyload = false
 --      }
 --}
+
+M.plugins = {
+  ["nvim-treesitter/nvim-treesitter"] = {
+    config = function(_, opts)
+      require("nvim-treesitter.configs").setup(opts)
+      vim.opt.foldmethod = "expr"
+      vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+      vim.opt.foldenable = true
+    end,
+  },
+}
 
 return M
