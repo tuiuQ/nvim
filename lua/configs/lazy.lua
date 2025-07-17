@@ -2,6 +2,12 @@ return {
   defaults = { lazy = true },
   install = { colorscheme = { "nvchad" } },
 
+  change_detection = {
+    -- automatically check for config file changes and reload the ui
+    enabled = false,
+    notify = false, -- get a notification when changes are found
+  },
+
   ui = {
     icons = {
       ft = "",
