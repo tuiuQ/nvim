@@ -35,7 +35,7 @@ return {
     windows = { position = "right", width = 40 },
   },
   keys = {
-    { "<C-i>", "<cmd>AvanteEdit<cr>", desc = "Avante Edit" },
+    { "<Space>ae", "<cmd>AvanteEdit<cr>", desc = "Avante Edit" },
     { "<C-u>", "<cmd>AvanteToggle<cr>", desc = "Avante Toggle" },
   },
 }
