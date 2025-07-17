@@ -96,6 +96,28 @@ return {
     event = 'VeryLazy',
     cond = not not vim.g.vscode,
     opts = {},
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
+    -- optional for floating window border decoration
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    -- See `:help lazygit.txt` for more custom configuration
+    opts = {
+      -- Your configuration goes here
+      -- e.g.
+      -- terminal_win_options = {
+      --   border = "rounded",
+      -- },
+    },
   }
 
 }
