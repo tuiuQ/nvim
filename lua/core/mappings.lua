@@ -18,3 +18,7 @@ keymap("n", "<A-1>", "<cmd>Neotree toggle<CR>")
 keymap("n", "<TAB>", "<cmd>BufferLineCycleNext<CR>")
 keymap("n", "<S-TAB>", "<cmd>BufferLineCyclePrev<CR>")
 keymap("n", "<LEADER>x", "<cmd>BufferLinePickClose<CR>")
+
+--- Terminal
+keymap({ "n", "t" }, "<A-`>", "<cmd>ToggleTerm<CR>")
+keymap("t", "<ESC><ESC>", "<C-\\><C-n>")
