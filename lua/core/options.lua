@@ -11,6 +11,15 @@ local default_options = {
 		clipboard = "unnamedplus",
 		autowrite = false,
 		autowriteall = false,
+		backup = false,
+		fileencoding = "utf-8",
+		hlsearch = true,
+		ignorecase = true,
+		mouse = "a"
+		showmode = false,
+		splitbelow = true,
+		splitright = true,
+		timeoutlen = 300,
 	},
 	g = {
 		mapleader = " ",
