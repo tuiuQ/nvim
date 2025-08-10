@@ -6,7 +6,8 @@ local default_options = {
 		shiftwidth = 2,
 		termguicolors = true,
 		foldmethod = 'expr',
-		foldexpr = 'nvim_treesitter#foldexpr()'
+		foldexpr = 'nvim_treesitter#foldexpr()',
+		foldlevel = 99
 	},
 	g = {
 		mapleader = " ",
