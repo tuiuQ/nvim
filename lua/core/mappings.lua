@@ -7,17 +7,23 @@ keymap({ "n", "v" }, "J", "5j")
 keymap({ "n", "v" }, "K", "5k")
 keymap({ "n", "v" }, "H", "5h")
 keymap({ "n", "v" }, "L", "5l")
+
+--- Better window navigation
 keymap("n", "<C-j>", "<C-w>j")
 keymap("n", "<C-k>", "<C-w>k")
 keymap("n", "<C-h>", "<C-w>h")
 keymap("n", "<C-l>", "<C-w>l")
 
+--- Toggle Explorer
 keymap("n", "<A-1>", "<cmd>Neotree toggle<CR>")
+
+--- Clear highlights
+keymap("n", "<ESC><ESC>", "<cmd>nohlsearch<CR>")
 
 --- BufferLine
 keymap("n", "<TAB>", "<cmd>BufferLineCycleNext<CR>")
 keymap("n", "<S-TAB>", "<cmd>BufferLineCyclePrev<CR>")
-keymap("n", "<LEADER>x", "<cmd>BufferLinePickClose<CR>")
+keymap("n", "<LEADER>x", "<cmd>bdelete<CR>")
 
 --- Terminal
 keymap({ "n", "t" }, "<A-`>", "<cmd>ToggleTerm<CR>")
