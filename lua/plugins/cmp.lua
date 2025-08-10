@@ -2,6 +2,7 @@ return {
 	"hrsh7th/nvim-cmp",
 	event = "InsertEnter",
 	dependencies = {
+		"onsails/lspkind.nvim", -- THIS LINE IS ADDED
 		{
 			-- snippet plugin
 			"L3MON4D3/LuaSnip",

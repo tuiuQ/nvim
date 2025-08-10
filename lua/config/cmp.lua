@@ -1,7 +1,16 @@
 local cmp = require "cmp"
+local lspkind = require "lspkind"
 
 local options = {
 	completion = { completeopt = "menu,menuone" },
+
+	formatting = {
+		format = lspkind.cmp_format({
+			mode = "symbol_text",
+			maxwidth = 50,
+			ellipsis_char = "...",
+		}),
+	},
 
 	snippet = {
 		expand = function(args)
