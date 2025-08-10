@@ -13,3 +13,8 @@ keymap("n", "<C-h>", "<C-w>h")
 keymap("n", "<C-l>", "<C-w>l")
 
 keymap("n", "<A-1>", "<cmd>Neotree toggle<CR>")
+
+--- BufferLine
+keymap("n", "<TAB>", "<cmd>BufferLineCycleNext<CR>")
+keymap("n", "<S-TAB>", "<cmd>BufferLineCyclePrev<CR>")
+keymap("n", "<LEADER>x", "<cmd>BufferLinePickClose<CR>")

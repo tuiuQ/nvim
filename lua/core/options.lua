@@ -3,11 +3,13 @@ local default_options = {
 		number = true,
 		relativenumber = true,
 		tabstop = 2,
-		shiftwidth = 2
+		shiftwidth = 2,
+		termguicolors = true,
 	},
 	g = {
 		mapleader = " ",
 		maplocalleader = "\\",
+		termguicolors = true,
 	}
 }
 
