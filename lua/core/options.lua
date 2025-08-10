@@ -8,7 +8,9 @@ local default_options = {
 		foldmethod = 'expr',
 		foldexpr = 'nvim_treesitter#foldexpr()',
 		foldlevel = 99,
-		clipboard = "unnamedplus"
+		clipboard = "unnamedplus",
+		autowrite = false,
+		autowriteall = false,
 	},
 	g = {
 		mapleader = " ",
