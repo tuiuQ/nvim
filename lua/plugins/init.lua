@@ -1,1 +1,5 @@
-return {}
+return {
+	{
+		'terryma/vim-multiple-cursors',
+	},
+}
