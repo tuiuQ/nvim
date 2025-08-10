@@ -1,12 +1,15 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	branch = 'master',
-	lazy = false,
+	event = { "BufReadPost", "BufNewFile" },
 	build = ":TSUpdate",
+	cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
 	dependencies = {
 		"HiPhish/rainbow-delimiters.nvim"
 	},
-	config = function()
-		require("config.treesitter")
+	opts = function ()
+		return require "config.treesitter"
+	end,
+	config = function(_, opts)
+		require("nvim-treesitter.configs").setup(opts)
 	end
 }

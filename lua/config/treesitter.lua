@@ -1,4 +1,4 @@
-require'nvim-treesitter.configs'.setup {
+return {
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "javascript", "typescript" },
   sync_install = false,
   auto_install = true,
@@ -40,26 +40,4 @@ require'nvim-treesitter.configs'.setup {
 	folding = {
 		enable = true
 	}
-}
-
-local rainbow_delimiters = require("rainbow-delimiters")
-
-vim.g.rainbow_delimiters = {
-	strategy = {
-		[''] = rainbow_delimiters.strategy['global'],
-		vim = rainbow_delimiters.strategy['local'],
-	},
-	query = {
-		[''] = 'rainbow-delimiters',
-		lua = 'rainbow-blocks',
-	},
-	highlight = {
-		'RainbowDelimiterRed',
-		'RainbowDelimiterYellow',
-		'RainbowDelimiterBlue',
-		'RainbowDelimiterOrange',
-		'RainbowDelimiterGreen',
-		'RainbowDelimiterViolet',
-		'RainbowDelimiterCyan',
-	},
 }
