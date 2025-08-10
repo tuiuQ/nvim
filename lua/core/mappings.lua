@@ -8,6 +8,11 @@ keymap({ "n", "v" }, "K", "5k")
 keymap({ "n", "v" }, "H", "5h")
 keymap({ "n", "v" }, "L", "5l")
 
+keymap("n", "<", "<<")
+keymap("n", ">", ">>")
+keymap("v", "<", "<gv", { noremap = true, silent = true, desc = "Decrease indent in visula mode" })
+keymap("v", ">", ">gv", { noremap = true, silent = true, desc = "Decrease indent in visula mode" })
+
 --- Better window navigation
 keymap("n", "<C-j>", "<C-w>j")
 keymap("n", "<C-k>", "<C-w>k")
