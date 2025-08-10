@@ -20,6 +20,7 @@ keymap("n", "<A-1>", "<cmd>Neotree toggle<CR>")
 --- Clear highlights
 keymap("n", "<ESC><ESC>", "<cmd>nohlsearch<CR>")
 
+--- Plugins
 --- BufferLine
 keymap("n", "<TAB>", "<cmd>BufferLineCycleNext<CR>")
 keymap("n", "<S-TAB>", "<cmd>BufferLineCyclePrev<CR>")
@@ -28,3 +29,10 @@ keymap("n", "<LEADER>x", "<cmd>bdelete<CR>")
 --- Terminal
 keymap({ "n", "t" }, "<A-`>", "<cmd>ToggleTerm<CR>")
 keymap("t", "<ESC><ESC>", "<C-\\><C-n>")
+
+-- Telescope
+local builtin = require("telescope.builtin")
+keymap("n", "<LEADER>ff", builtin.find_files, { desc = "Telescope find files" })
+keymap("n", "<LEADER>fw", builtin.live_grep, { desc = "Telescope live grep" })
+keymap("n", "<LEADER>fb", builtin.buffers, { desc = "Telescope buffers" })
+keymap("n", "<LEADER>fh", builtin.help_tags, { desc = "Telescope help tags" })
