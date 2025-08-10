@@ -27,9 +27,7 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins" },
   },
-}, {
-	lazy = true
-})
+}, require("config.lazy"))
 
 require("core")
 
