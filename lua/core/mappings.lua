@@ -30,9 +30,4 @@ keymap("n", "<LEADER>x", "<cmd>bdelete<CR>")
 keymap({ "n", "t" }, "<A-`>", "<cmd>ToggleTerm<CR>")
 keymap("t", "<ESC><ESC>", "<C-\\><C-n>")
 
--- Telescope
-local builtin = require("telescope.builtin")
-keymap("n", "<LEADER>ff", builtin.find_files, { desc = "Telescope find files" })
-keymap("n", "<LEADER>fw", builtin.live_grep, { desc = "Telescope live grep" })
-keymap("n", "<LEADER>fb", builtin.buffers, { desc = "Telescope buffers" })
-keymap("n", "<LEADER>fh", builtin.help_tags, { desc = "Telescope help tags" })
+
