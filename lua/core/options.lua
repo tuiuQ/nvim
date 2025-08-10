@@ -1,35 +1,31 @@
-local default_options = {
-	opt = {
-		number = true,
-		relativenumber = true,
-		tabstop = 2,
-		shiftwidth = 2,
-		termguicolors = true,
-		foldmethod = 'expr',
-		foldexpr = 'nvim_treesitter#foldexpr()',
-		foldlevel = 99,
-		clipboard = "unnamedplus",
-		autowrite = false,
-		autowriteall = false,
-		backup = false,
-		fileencoding = "utf-8",
-		hlsearch = true,
-		ignorecase = true,
-		mouse = "a",
-		showmode = false,
-		splitbelow = true,
-		splitright = true,
-		timeoutlen = 300,
-	},
-	g = {
-		mapleader = " ",
-		maplocalleader = "\\",
-		termguicolors = true,
-	}
-}
+-- Set global variables
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+vim.g.termguicolors = true
 
-for mode, options in pairs(default_options) do
-	for key, value in pairs(options) do
-		vim[mode][key] = value
-	end
+-- Set global options
+vim.opt.termguicolors = true
+vim.opt.clipboard = "unnamedplus"
+vim.opt.autowrite = false
+vim.opt.autowriteall = false
+vim.opt.backup = false
+vim.opt.fileencoding = "utf-8"
+vim.opt.hlsearch = true
+vim.opt.ignorecase = true
+vim.opt.mouse = "a"
+vim.opt.showmode = false
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.timeoutlen = 300
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+
+-- Function to set options for file buffers
+function _G.set_buffer_options()
+    vim.opt_local.number = true
+    vim.opt_local.relativenumber = true
+    vim.opt_local.foldmethod = 'expr'
+    vim.opt_local.foldexpr = 'nvim_treesitter#foldexpr()'
+    vim.opt_local.foldlevel = 99
 end
+
