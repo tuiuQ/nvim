@@ -5,6 +5,8 @@ local default_options = {
 		tabstop = 2,
 		shiftwidth = 2,
 		termguicolors = true,
+		foldmethod = 'expr',
+		foldexpr = 'nvim_treesitter#foldexpr()'
 	},
 	g = {
 		mapleader = " ",
