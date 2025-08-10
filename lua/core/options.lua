@@ -7,7 +7,8 @@ local default_options = {
 		termguicolors = true,
 		foldmethod = 'expr',
 		foldexpr = 'nvim_treesitter#foldexpr()',
-		foldlevel = 99
+		foldlevel = 99,
+		clipboard = "unnamedplus"
 	},
 	g = {
 		mapleader = " ",
